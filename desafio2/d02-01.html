@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="app">
+        <button id="botao" type="button">clique me</button>
+    </div>
+    <script>
+        var botao = document.querySelector("#botao");
+        botao.onclick = function() {
+            var quadrado = document.createElement("div");
+            quadrado.style.width = 100;
+            quadrado.style.height = 100;
+            quadrado.style.backgroundColor = 'red';
+
+            var container = document.querySelector("#app");
+            container.appendChild(quadrado);
+        }
+    </script>
+</body>
+
+</html>
