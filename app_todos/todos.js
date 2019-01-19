@@ -19,3 +19,19 @@ function renderTodos() {
 }
 
 renderTodos();
+
+function clearListTodos() {
+  listElement.innerHTML = '';
+}
+
+function addTodo() {
+  var todoText = inputElement.value;
+
+  todos.push(todoText);
+  inputElement.value = '';
+
+  apagarTodosTodos();
+  renderTodos();
+}
+
+buttonElement.onclick = addTodo;
