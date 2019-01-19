@@ -5,26 +5,26 @@
 </head>
 
 <body>
-    <script>
-        var usuarios = [
-            {
-                nome: "Diego",
-                habilidades: ["Javascript", "ReactJS", "Redux"]
-            },
-            {
-                nome: "Gabriel",
-                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
-            }
-        ];
+  <script>
+    var usuarios = [
+      {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+      },
+      {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+      }
+    ];
 
-        function formaFrase(usuarios) {
-            for (const iterator of usuarios) {
-                console.log(`O ${iterator.nome} possui as habilidades: ${iterator.habilidades.join(', ')}`);
-            }
-        }
+    function formaFrase(usuarios) {
+      for (const iterator of usuarios) {
+        console.log(`O ${iterator.nome} possui as habilidades: ${iterator.habilidades.join(', ')}`);
+      }
+    }
 
-        formaFrase(usuarios);
-    </script>
+    formaFrase(usuarios);
+  </script>
 </body>
 
 </html>

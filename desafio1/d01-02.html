@@ -5,26 +5,26 @@
 </head>
 
 <body>
-    <script>
-        function pares(x, y) {
-            var menor = x;
-            var maior = y;
+  <script>
+    function pares(x, y) {
+      var menor = x;
+      var maior = y;
 
-            if (x > y) {
-                menor = y;
-                maior = x;
-            }
+      if (x > y) {
+        menor = y;
+        maior = x;
+      }
 
-            while (menor < maior) {
-                if (menor % 2 == 0) {
-                    console.log(menor);
-                }
-                menor++;
-            }
+      while (menor < maior) {
+        if (menor % 2 == 0) {
+          console.log(menor);
         }
+        menor++;
+      }
+    }
 
-        pares(32, 321);
-    </script>
+    pares(32, 321);
+  </script>
 </body>
 
 </html>

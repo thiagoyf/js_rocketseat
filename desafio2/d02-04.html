@@ -5,35 +5,35 @@
 </head>
 
 <body>
-    <div id="app">
-        <input type="text" name="nome">
-        <button onClick="adicionar()">Adicionar</button>
+  <div id="app">
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
 
-        <br/>
+    <br />
 
-        <ul>
-        </ul>
-    </div>
-    <script>
-        var nomes = ["Diego", "Gabriel", "Lucas"];
-        var lista = document.querySelector("div#app ul");
+    <ul>
+    </ul>
+  </div>
+  <script>
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var lista = document.querySelector("div#app ul");
 
-        for (const iterator of nomes) {
-            var item = document.createElement("li");
-            var texto = document.createTextNode(iterator);
-            item.appendChild(texto);
-            lista.appendChild(item);
-        }
+    for (const iterator of nomes) {
+      var item = document.createElement("li");
+      var texto = document.createTextNode(iterator);
+      item.appendChild(texto);
+      lista.appendChild(item);
+    }
 
-        function adicionar() {
-            var inputNome = document.querySelector("input[name=nome]");
-            var item = document.createElement("li");
-            var texto = document.createTextNode(inputNome.value);
-            item.appendChild(texto);
-            lista.appendChild(item);
-            inputNome.value = '';
-        }
-    </script>
+    function adicionar() {
+      var inputNome = document.querySelector("input[name=nome]");
+      var item = document.createElement("li");
+      var texto = document.createTextNode(inputNome.value);
+      item.appendChild(texto);
+      lista.appendChild(item);
+      inputNome.value = '';
+    }
+  </script>
 </body>
 
 </html>

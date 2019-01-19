@@ -5,36 +5,36 @@
 </head>
 
 <body>
-    <div id="app">
-        <button id="botao" type="button">clique me</button>
-    </div>
-    <script>
-        var botao = document.querySelector("#botao");
+  <div id="app">
+    <button id="botao" type="button">clique me</button>
+  </div>
+  <script>
+    var botao = document.querySelector("#botao");
 
-        function getRandomColor() {
-            var letters = "0123456789ABCDEF";
-            var color = "#";
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
 
-        botao.onclick = function () {
-            var quadrado = document.createElement("div");
-            quadrado.style.width = 100;
-            quadrado.style.height = 100;
-            quadrado.style.backgroundColor = 'red';
+    botao.onclick = function () {
+      var quadrado = document.createElement("div");
+      quadrado.style.width = 100;
+      quadrado.style.height = 100;
+      quadrado.style.backgroundColor = 'red';
 
-            quadrado.onmouseover = function() {
-                quadrado.style.backgroundColor = getRandomColor();
-            }
+      quadrado.onmouseover = function () {
+        quadrado.style.backgroundColor = getRandomColor();
+      }
 
-            var container = document.querySelector("#app");
-            container.appendChild(quadrado);
-        }
-        
-    </script>
+      var container = document.querySelector("#app");
+      container.appendChild(quadrado);
+    }
+
+  </script>
 </body>
 
 </html>
