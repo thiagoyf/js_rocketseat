@@ -1,1 +1,1 @@
-# js_rocketseat
+# JS Rocketseat
